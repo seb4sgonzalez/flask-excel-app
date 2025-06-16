@@ -89,5 +89,7 @@ def mostrar_excel():
 
 # Ejecuta la app si se corre este archivo directamente
 if __name__ == '__main__':
-port = int(os.environ.get('PORT', 5000))  # Usa el puerto que Render le asigna
-app.run(host='0.0.0.0', port=port, debug=True)
+    port = int(os.environ.get('PORT', 5000))  # Usa el puerto que Render le asigna
+    app.run(host='0.0.0.0', port=port, debug=True)  # Escucha en el puerto adecuado
+
+
