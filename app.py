@@ -5,7 +5,7 @@ app = Flask(__name__)  # Crea la aplicación Flask
 
 @app.route('/')  # Define la ruta principal (cuando visitas http://localhost:5000/)
 def mostrar_excel():
-    archivo_excel = '/home/sgonzalez/Documents/importacion_final.xls'  # Ruta al archivo Excel (formato .xls)
+    archivo_excel = 'excel/importacion_final.xls'
 
     # Lee el archivo Excel usando pandas con el motor 'xlrd' (compatible con archivos .xls)
     df = pd.read_excel(archivo_excel, engine='xlrd')
