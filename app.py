@@ -23,7 +23,7 @@ def mostrar_excel():
     <html lang="es">
     <head>
       <meta charset="utf-8">
-      <title>Datos del Excel by Sebas</title>
+      <title>Datos del Excel</title>
 
       <!-- Bootstrap CSS para estilos rápidos -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -56,7 +56,7 @@ def mostrar_excel():
     </head>
     <body>
       <div class="container">
-        <h1 class="text-center">Datos desde Excel by Sebas</h1>
+        <h1 class="text-center">Datos desde Excel</h1>
         {tabla_html}  <!-- Inserta la tabla HTML generada desde pandas -->
       </div>
 
