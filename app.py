@@ -1,5 +1,6 @@
 from flask import Flask, render_template_string  # Importa Flask y la función para renderizar HTML como texto
 import pandas as pd  # Importa pandas para leer el archivo Excel
+import os
 
 app = Flask(__name__)  # Crea la aplicación Flask
 
@@ -88,5 +89,9 @@ def mostrar_excel():
 
 # Ejecuta la app si se corre este archivo directamente
 if __name__ == '__main__':
-    app.run(debug=True)  # 'debug=True' permite ver errores en el navegador y reinicia el servidor automáticamente
+    
+
+port = int(os.environ.get('PORT', 5000))  # Usa el puerto que Render le asigna
+app.run(host='0.0.0.0', port=port, debug=True)
+
 
